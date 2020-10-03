@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="quiz.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div id="quizContainer" class="container row">
+			<div class="title col-12">Computer Quiz</div>
+			<div id="question" class="question col-11"></div>
+			<label class="option col-sm-10 col-md-5 col-lg-5"><input type="radio" name="option" value="1" /> <b><span id="opt1"></span></b></label>
+			<label class="option col-sm-10 col-md-5 col-lg-5"><input type="radio" name="option" value="2" /> <b><span id="opt2"></span></b></label>
+			<label class="option col-sm-10 col-md-5 col-lg-5"><input type="radio" name="option" value="3" /> <b><span id="opt3"></span></b></label>
+			<label class="option col-sm-10 col-md-5 col-lg-5"><input type="radio" name="option" value="4" /> <b><span id="opt4"></span></b></label>
+			<button id="skipButton" class="skip-btn col-sm-10 col-md-10 col-lg-5" onclick="skipQuestion();">Skip</button>
+			<button id="nextButton" class="next-btn col-sm-10 col-md-10 col-lg-5" onclick="loadNextQuestion();">Submmit</button>
+		</div>
+		<div id="result" class="container result" style="display:none;">
+		</div>
+		<script src="question.js"></script>
+		<script src="quiz-script.js"></script>
+	</body>
+</html>
